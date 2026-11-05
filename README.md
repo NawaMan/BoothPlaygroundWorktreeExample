@@ -8,3 +8,4 @@ A small Python project for trying CodingBooth on git worktrees.
 Worktrees go under `worktree/` (ignored):
 
     git worktree add worktree/feature -b feature
+# BoothPlaygroundWorktreeExample
