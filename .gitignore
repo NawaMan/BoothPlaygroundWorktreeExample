@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+.booth/.tmp/
+# Linked worktrees live here, nested in the main clone.
+/worktree/
