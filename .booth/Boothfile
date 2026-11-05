@@ -1,10 +1,12 @@
 # syntax=codingbooth/boothfile:1
-# Configured by: booth config --no-tui --overwrite --select python
+# Configured by: booth config --no-tui --overwrite --select python+pip-config+vscode-ext/gh+credential
 
 env APT_SNAPSHOT=20261023T000000Z
 
+arg GH_VERSION=latest
 arg PYTHON_VERSION=3.14.10
 
+setup gh --version ${GH_VERSION}
 env CB_PYENV_ROOT=/opt/pyenv
 env CB_PY_STABLE=/opt/python
 env CB_VENV_ROOT=/opt/venvs
