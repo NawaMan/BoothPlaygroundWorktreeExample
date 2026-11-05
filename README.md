@@ -9,3 +9,5 @@ Worktrees go under `worktree/` (ignored):
 
     git worktree add worktree/feature -b feature
 # BoothPlaygroundWorktreeExample
+
+Updated on main for worktree testing.
