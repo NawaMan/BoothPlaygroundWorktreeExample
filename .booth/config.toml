@@ -1,4 +1,4 @@
-# Configured by: booth config --no-tui --overwrite --select python+pip-config+vscode-ext/gh+credential/git-credential
+# Configured by: booth config --no-tui --overwrite --select python+pip-config+vscode-ext/gh/git-credential/claude-code+auto-accept+settings-cache+token-credential~credential
 
 
 run-args = [
@@ -6,7 +6,8 @@ run-args = [
     "-v", "~/.config/pip:/etc/cb-home-seed/.config/pip:ro",
     "-v", "~/Library/Application Support/pip:/etc/cb-home-seed/.config/pip:ro",
     "-v", "~/AppData/Roaming/pip:/etc/cb-home-seed/.config/pip:ro",
-    "-v", "~/.config/gh:/etc/cb-home-seed/.config/gh:ro",
-    "-v", "~/AppData/Roaming/GitHub CLI:/etc/cb-home-seed/.config/gh:ro",
-    "-v", "~/.gitconfig:/etc/cb-home-seed/.gitconfig:ro"
+    "-v", "~/.gitconfig:/etc/cb-home-seed/.gitconfig:ro",
+    "-e", "CLAUDE_CODE_OAUTH_TOKEN=${CLAUDE_CODE_OAUTH_TOKEN}"
 ]
+
+cache-dirs = ["home/coder/.claude"]
